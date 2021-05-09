@@ -1,0 +1,233 @@
+[2021-04-27 10:14:57 #1683.1]	INFO	Server is shutdown now
+[2021-04-27 12:06:48 *2817.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class '\App\WebSocket\Index' not found in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php:176
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(76): EasySwoole\Socket\Dispatcher->getController('\\App\\WebSocket\\...')
+#1 /var/www/easyswoole/EasySwooleEvent.php(37): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"class":"Index...', Object(Swoole\WebSocket\Frame))
+#2 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#3 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 {main}
+  thrown in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php on line 176
+[2021-04-27 12:06:48 $2814.0]	WARNING	swManager_check_exit_status: worker#0[pid=2817] abnormal exit, status=255, signal=0
+[2021-04-27 12:08:21 *2823.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class '\App\WebSocket\Index' not found in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php:176
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(76): EasySwoole\Socket\Dispatcher->getController('\\App\\WebSocket\\...')
+#1 /var/www/easyswoole/EasySwooleEvent.php(37): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"class":"Index...', Object(Swoole\WebSocket\Frame))
+#2 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#3 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 {main}
+  thrown in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php on line 176
+[2021-04-27 12:08:21 $2814.0]	WARNING	swManager_check_exit_status: worker#0[pid=2823] abnormal exit, status=255, signal=0
+[2021-04-27 16:16:28 *4218.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class 'App\WebSocket\Controller\Logger' not found in /var/www/easyswoole/App/WebSocket/Controller/Index.php:35
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(128): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(37): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"class":"Inde...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server),  in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 35
+[2021-04-27 16:16:28 $4215.0]	WARNING	swManager_check_exit_status: worker#0[pid=4218] abnormal exit, status=255, signal=0
+[2021-04-27 16:17:53 *4243.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class 'EasySwoole\EasySwoole\EasySwoole\Logger' not found in /var/www/easyswoole/App/WebSocket/Controller/Index.php:36
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(128): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(37): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"class":"Inde...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\S in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 36
+[2021-04-27 16:17:53 $4240.0]	WARNING	swManager_check_exit_status: worker#0[pid=4243] abnormal exit, status=255, signal=0
+[2021-04-29 00:08:48 *9744.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class 'App\WebSocket\Controller\Logger' not found in /var/www/easyswoole/App/WebSocket/Controller/Index.php:35
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(128): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(36): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"class":"Index...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server),  in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 35
+[2021-04-29 00:08:48 $9741.0]	WARNING	swManager_check_exit_status: worker#0[pid=9744] abnormal exit, status=255, signal=0
+[2021-04-29 00:22:53 *10003.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function getClassName() on null in /var/www/easyswoole/vendor/easyswoole/log/src/Logger.php:32
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/Logger.php(96): EasySwoole\Log\Logger->log('\xE6\x89\x93\xE5\x8D\xB0\xE6\x97\xA5\xE5\xBF\x97', 4, 'error')
+#1 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/Logger.php(132): EasySwoole\EasySwoole\Logger->log('\xE6\x89\x93\xE5\x8D\xB0\xE6\x97\xA5\xE5\xBF\x97', 4, 'error')
+#2 /var/www/easyswoole/App/WebSocket/Controller/Index.php(34): EasySwoole\EasySwoole\Logger->error('\xE6\x89\x93\xE5\x8D\xB0\xE6\x97\xA5\xE5\xBF\x97')
+#3 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(128): App\WebSocket\Controller\Index->index()
+#4 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Resp in /var/www/easyswoole/vendor/easyswoole/log/src/Logger.php on line 32
+[2021-04-29 00:22:53 $10000.0]	WARNING	swManager_check_exit_status: worker#0[pid=10003] abnormal exit, status=255, signal=0
+[2021-04-29 00:26:11 *10045.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Using $this when not in object context in /var/www/easyswoole/vendor/easyswoole/log/src/Logger.php:21
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(127): EasySwoole\Log\Logger::setCaller(Object(EasySwoole\Socket\Bean\Caller))
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(36): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"class":"Index...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swo in /var/www/easyswoole/vendor/easyswoole/log/src/Logger.php on line 21
+[2021-04-29 00:26:11 $10042.0]	WARNING	swManager_check_exit_status: worker#0[pid=10045] abnormal exit, status=255, signal=0
+[2021-04-29 00:37:55 *10221.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swManager_check_exit_status: worker#1[pid=10222] abnormal exit, status=0, signal=1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swManager_check_exit_status: worker#2[pid=10223] abnormal exit, status=0, signal=1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swManager_check_exit_status: worker#3[pid=10224] abnormal exit, status=0, signal=1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swManager_check_exit_status: worker#4[pid=10225] abnormal exit, status=0, signal=1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swManager_check_exit_status: worker#5[pid=10226] abnormal exit, status=0, signal=1
+[2021-04-29 00:37:55 #10217.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 *10221.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 #10217.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:55 $10218.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2021-04-29 00:37:57 *10221.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 01:37:30 *10253.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 01:57:30 *10347.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 02:17:30 *10371.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 02:37:30 *10413.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 02:57:30 *10424.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 03:17:30 *10437.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 03:37:30 *10532.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 03:57:30 *10561.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 04:17:30 *10573.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 04:37:30 *10602.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 04:57:30 *10616.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 05:17:30 *10649.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 05:37:30 *10681.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 05:57:30 *10692.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 06:17:30 *10703.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 06:37:30 *10735.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 06:57:30 *10746.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 07:17:30 *10757.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 07:37:30 *10788.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 07:57:30 *10799.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 08:17:30 *10812.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 08:37:30 *10859.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 08:57:30 *10871.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 09:17:30 *10895.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 09:37:30 *11278.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 09:57:30 *11333.0]	NOTICE	php_swoole_server_rshutdown (ERRNO 9003): worker process is terminated by exit()/die()
+[2021-04-29 10:05:35 #10217.1]	INFO	Server is shutdown now
+[2021-05-06 11:52:15 *5513.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Socket\Exception\ControllerPoolEmpty: controller pool empty for \App\WebSocket\Controller\Index in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php:90
+Stack trace:
+#0 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#1 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#2 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#3 {main}
+  thrown in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php on line 90
+[2021-05-06 11:52:15 @5513.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 200 consumers will be discarded
+[2021-05-06 11:52:15 @5513.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 101 consumers will be discarded
+[2021-05-06 11:52:15 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5513] abnormal exit, status=255, signal=0
+[2021-05-06 11:52:18 *5543.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:52:18 @5543.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 198 consumers will be discarded
+[2021-05-06 11:52:18 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5543] abnormal exit, status=255, signal=0
+[2021-05-06 11:52:21 *5544.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Socket\Exception\ControllerPoolEmpty: controller pool empty for \App\WebSocket\Controller\Index in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php:90
+Stack trace:
+#0 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#1 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#2 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#3 {main}
+  thrown in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php on line 90
+[2021-05-06 11:52:21 @5544.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 200 consumers will be discarded
+[2021-05-06 11:52:21 @5544.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 100 consumers will be discarded
+[2021-05-06 11:52:21 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5544] abnormal exit, status=255, signal=0
+[2021-05-06 11:52:24 *5546.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:52:24 @5546.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 190 consumers will be discarded
+[2021-05-06 11:52:24 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5546] abnormal exit, status=255, signal=0
+[2021-05-06 11:52:27 *5547.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\Socket\Exception\ControllerPoolEmpty: controller pool empty for \App\WebSocket\Controller\Index in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php:90
+Stack trace:
+#0 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#1 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#2 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#3 {main}
+  thrown in /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php on line 90
+[2021-05-06 11:52:27 @5547.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 200 consumers will be discarded
+[2021-05-06 11:52:27 @5547.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 85 consumers will be discarded
+[2021-05-06 11:52:27 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5547] abnormal exit, status=255, signal=0
+[2021-05-06 11:52:30 *5548.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:52:30 @5548.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 169 consumers will be discarded
+[2021-05-06 11:52:30 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5548] abnormal exit, status=255, signal=0
+[2021-05-06 11:52:34 *5549.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:52:34 @5549.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 200 consumers will be discarded
+[2021-05-06 11:52:34 @5549.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 61 consumers will be discarded
+[2021-05-06 11:52:34 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5549] abnormal exit, status=255, signal=0
+[2021-05-06 11:52:37 *5551.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:52:37 @5551.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 128 consumers will be discarded
+[2021-05-06 11:52:37 $5510.0]	WARNING	swManager_check_exit_status: worker#0[pid=5551] abnormal exit, status=255, signal=0
+[2021-05-06 11:54:51 *5583.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:54:51 @5583.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 60 consumers will be discarded
+[2021-05-06 11:54:51 $5580.0]	WARNING	swManager_check_exit_status: worker#0[pid=5583] abnormal exit, status=255, signal=0
+[2021-05-06 11:54:54 *5589.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:54:54 @5589.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 28 consumers will be discarded
+[2021-05-06 11:54:54 $5580.0]	WARNING	swManager_check_exit_status: worker#0[pid=5589] abnormal exit, status=255, signal=0
+[2021-05-06 11:54:58 *5590.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:54:58 @5590.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 49 consumers will be discarded
+[2021-05-06 11:54:58 $5580.0]	WARNING	swManager_check_exit_status: worker#0[pid=5590] abnormal exit, status=255, signal=0
+[2021-05-06 11:55:28 *5592.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:55:28 @5592.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 61 consumers will be discarded
+[2021-05-06 11:55:28 $5580.0]	WARNING	swManager_check_exit_status: worker#0[pid=5592] abnormal exit, status=255, signal=0
+[2021-05-06 11:55:32 *5594.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:55:32 @5594.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 29 consumers will be discarded
+[2021-05-06 11:55:32 $5580.0]	WARNING	swManager_check_exit_status: worker#0[pid=5594] abnormal exit, status=255, signal=0
+[2021-05-06 11:55:36 *5596.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Call to a member function get() on null in /var/www/easyswoole/App/WebSocket/Controller/Index.php:33
+Stack trace:
+#0 /var/www/easyswoole/vendor/easyswoole/socket/src/AbstractInterface/Controller.php(133): App\WebSocket\Controller\Index->index()
+#1 /var/www/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(83): EasySwoole\Socket\AbstractInterface\Controller->__hook(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Config), Object(EasySwoole\Socket\Bean\Caller), Object(EasySwoole\Socket\Bean\Response))
+#2 /var/www/easyswoole/EasySwooleEvent.php(40): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), ' {"controller":...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /var/www/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(112): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swo in /var/www/easyswoole/App/WebSocket/Controller/Index.php on line 33
+[2021-05-06 11:55:36 @5596.0]	WARNING	~Channel (ERRNO 10003): channel is destroyed, 47 consumers will be discarded
+[2021-05-06 11:55:36 $5580.0]	WARNING	swManager_check_exit_status: worker#0[pid=5596] abnormal exit, status=255, signal=0
